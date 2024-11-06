@@ -1,0 +1,593 @@
+html {
+    scroll-behavior: smooth;
+    scroll-behavior: 5s;
+  }
+  /* :root {
+    --primary-color: #eb6325;
+    --secondary-color: #fff;
+    --sucess-color: #0b2f78;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+  }
+  
+  header {
+    background-color: #fff;
+    box-shadow: 0px 3px 10px #464646;
+    height: 11vh;
+    top: 0;
+    margin-top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+
+  }
+  
+  .nav-bar {
+    display: flex;
+
+    gap: 180px;
+    padding: 1.5rem 6rem;
+    height: 11vh;
+
+
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    width: 160px;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+  
+  }
+  .nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    text-align: justify;
+    align-items: center;
+
+    
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #000;
+    font-family: "poppins", roboto;
+    font-weight: 500;
+    margin-left: 35px;
+  
+  }
+  #fale-conosco {
+    border-radius: 100px;
+    margin-left: 25px;
+    padding: 16px;
+    background-color: #0B2F78;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+  }
+  #fale-conosco:hover {
+    transform: translateY(-10px); 
+  }
+  #fale-conosco a {
+    padding: 16px 32px 16px 32px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .nav-item :hover {
+    color: #0B2F78;
+    transition: 0.2s;
+  }
+  .mobile-menu-icon {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  } */
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+.btnContato{
+    background-color: #0B2F78;
+    padding: 10px 45px;
+    font-size: 13px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-family: poppins;
+    font-size: 16px;
+}
+
+#sobreNos{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    padding: 15px;
+    margin-top: 150px;
+}
+
+#sobreNos h1{
+    font-weight: bold;
+    font-size: 45px;
+    font-family: poppins;
+}
+#sobreNos p{
+    font-size: 17px;
+    margin: 10px 0px 14px;
+    font-family: roboto;
+    max-width: 600px;
+    text-align: justify;
+}
+#sobreNos img{
+    width: 560px;
+    border-radius: 10px;
+}
+#clientes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+
+}
+
+#clientes span{
+    font-size: 13px;
+    color: #ff8c00;
+    font-weight: bold;
+}
+#clientes h2{
+    font-size: 42px;
+    font-weight: bold;
+    max-width: 500px;
+    font-family: poppins;
+}
+#clientes p{
+    font-size: 15px;
+    max-width: 600px;
+    font-family: roboto;
+}
+#clientes img{
+    width: 40%;
+}
+
+.cardd{
+    border: 1px solid gray;
+    padding: 10px;
+    width: 100%;
+
+}
+.containerConfiabilidade{
+
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    
+}
+.sobreImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  padding: 10px;
+  gap: 10px;
+}
+
+
+.containerBtn{
+    text-align: center;
+}
+.swiper-button-prev, .swiper-button-next {
+    width: 0px; /* Largura dos botões */
+    height: 0px; /* Altura dos botões */
+    background-size: 20px 20px; /* Tamanho do ícone */
+}
+.swiper-button-prev, .swiper-button-next {
+    top: 80%; /* Centraliza verticalmente */
+    transform: translateY(-80%); /* Ajusta o alinhamento */
+}
+
+/* Ajustar o tamanho do ícone dentro dos botões */
+.swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 20px; /* Tamanho do ícone */
+}
+.swiper {
+    width: 620px;
+  }
+
+#serviços{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#0B2F78;
+    padding: 20px;
+    gap: 30px;
+    
+}
+#serviços h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 56px;
+    font-family: poppins;
+    text-align: center;
+}
+#serviços h2{
+   color: #fff;
+   font-size: 22px;
+   font-weight: 700;
+   font-family: poppins;
+   text-align: center;
+}
+#serviços p {
+    max-width: 300px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-family: roboto;
+}
+.containerCards{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.cardServico{
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.09);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 350px;
+    
+}
+.cardServico figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#serviços div img{
+    width: 20%;
+}
+#parceiros{
+    text-align: center;
+    padding: 20px;
+}
+#parceiros h1{
+    font-weight: bold;
+    font-size: 38px;
+    font-family: poppins;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+#parceiros div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+
+#parceiros img{
+    width: 120px;
+}
+
+#contato{
+    display: flex;
+    background-color: #CCCCCC;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 80px;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+}
+
+.containerForm{
+    background-color: #E9E9E9;
+    min-width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.containerForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.containerForm form button{
+    margin-bottom: 80px;
+}
+.containerForm form input, select,textarea{
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+}
+.formDiv{
+    width: 90%;
+    padding-top: 50px;
+}
+.orcamento{
+    max-width: 500px;
+}
+.orcamento h1{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: poppins;
+    padding: 10px;
+}
+.orcamento p{
+    font-size: 17px;
+    font-family: roboto;
+    padding: 10px;
+}
+footer{
+    font-family: roboto;
+}
+.textHeader{
+  position: absolute;
+  top:30%;
+  font-family: poppins;
+  opacity: .9;
+
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  font-size: 4rem;
+  color: #fff;
+  flex-direction: column;
+  font-weight: bold;
+
+
+}
+.textHeader div{
+  max-width: 600px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.textHeader div:nth-child(2){
+  max-width: 800px;
+  display: flex;
+  
+
+}
+#equipe{
+  background-color: #0B2F78;
+  display: flex;
+  padding: 80px;
+  gap: 10px;
+  font-family: poppins;
+}
+.cardEqupe{
+  background-color: #fff;
+  
+  width: 200px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
+}
+.cardDesc{
+  border-top: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+
+}
+.cardDesc div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardEqupe figure{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardEqupe figure img{
+  width: 160px;
+}
+.cardNome{
+  font-weight: bold;
+}
+.section-nossos-projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  margin-top:-10px;
+ 
+}
+.container-tamanho-nossos-projetos {
+  display: flex;
+  flex-direction: column;
+}
+.titulo-nossos-projetos {
+  font-size:40px;
+  font-weight: bold;
+  margin-bottom:50px;
+  font-family: poppins;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.container-imagens-nossos-projetos {
+  display: flex;
+  flex-direction:row;
+  padding:20px;
+  gap:10px;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+.container-duas-primeiras-imagens-nossos-projetos {
+
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  height:275px;
+
+}
+.container-do-meio-imagens-nossos-projetos {
+  display: flex;
+  flex-direction:column;
+
+  justify-content: space-around;
+  height:305;
+
+}
+
+.imagem-nossos-projetos {
+  cursor: pointer;
+  height:260px;
+  width:100%;
+  object-fit: cover;
+  box-shadow: 10px 10px 30px 5px #8b6969;
+}
+.imagem-nossos-projetos:hover{
+  opacity: .7;
+}
+
+@media (max-width:1151px) {
+    .swiper {
+       width: 420px; /* Reduce el espaciado en pantallas más pequeñas */
+    }
+}
+@media (max-width:845px) {
+    #clientes {
+      flex-wrap: wrap;/* Reduce el espaciado en pantallas más pequeñas */
+    }
+    #clientes img{
+        width: 60%;
+    }
+    .containerConfiabilidade{
+        text-align: center;
+    }
+    .tittle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .swiper {
+        width: 550px; /* Reduce el espaciado en pantallas más pequeñas */
+     }
+}
+
+@media (max-width:577px) {
+    .swiper {
+       width: 420px; /* Reduce el espaciado en pantallas más pequeñas */
+    }
+    .containerForm{
+        min-width: 150px;
+        padding: 40px;
+     
+    }
+    .inputNome{
+        margin-bottom: 20px;
+    }
+    #sobreNos h1,#clientes h2,#serviços h1,#parceiros h1{
+        font-size: 30px;
+    }
+    #sobreNos p,#clientes p{
+        font-size: 14px;
+    }
+    .txtSobreNos{
+        text-align: center;
+    }
+}
+@media (max-width:430px) {
+    .swiper {
+       width: 320px; /* Reduce el espaciado en pantallas más pequeñas */
+    }
+    
+}
+
+
+
+@media screen and (max-width: 1080px) {
+    .nav-bar {
+      padding: 1.5rem 0rem;
+  
+      align-items: center;
+      padding-left: 50px;
+    }
+    .nav-item {
+      display: none;
+    }
+    .nav-item :hover {
+      color: white;
+      transition: 0.2s;
+    }
+  
+    .nav-link {
+      font-size: 0.8125rem;
+      padding-right:200px;
+  
+      
+    }
+    .mobile-menu-icon {
+      display: block;
+    }
+    .mobile-menu-icon button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    .mobile-menu ul {
+      display: flex;
+      flex-direction: column;
+  
+      padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+      display: block;
+  
+      padding-bottom: 13px;
+    }
+  
+    .open {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      width: 150px;
+    }
+    .home {
+      color: var(--secondary-color);
+    }
+    ul {
+      width: 100%;
+    }
+    .nav-item {
+      width: 100%;
+    }
+    .nav-item:hover {
+      background-color: #0B2F78;
+    }
+  
+}  
